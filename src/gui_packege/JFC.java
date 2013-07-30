@@ -1,0 +1,701 @@
+package gui_packege;
+import javax.swing.*;
+import java.awt.BorderLayout;
+import java.awt.EventQueue;
+import java.awt.*;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.border.EmptyBorder;
+import javax.swing.JLabel;
+import com.jgoodies.forms.factories.DefaultComponentFactory;
+import javax.swing.JTextField;
+import javax.swing.JButton;
+import javax.swing.SwingConstants;
+import javax.swing.border.TitledBorder;
+import javax.swing.UIManager;
+import javax.swing.border.LineBorder;
+import javax.swing.border.MatteBorder;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+
+public class JFC extends JFrame {
+	private JTextField textField;
+	private JTextField jTextField1;
+	private JTextField jTextField2;
+	private JTextField jTextField3;
+	private JTextField jTextField4;
+	private JTextField jTextField5;
+	private JTextField jTextField6;
+
+/*main function*/
+	public static void main(String[] args) {
+		  
+			  JOptionPane.showMessageDialog(null, "ALGOO VISUAL LAB PRESENTS\n"+"" +
+			  		".............................................................................\n" +
+			  		"Student Information of Cste 6th Batch \n" +
+			  		"..............................................................................");
+		  
+		 
+		  
+		  
+		EventQueue.invokeLater(new Runnable() {
+			public void run() {
+				
+				try {
+					Thread.sleep(1500);
+					JFC frame = new JFC();
+					frame.setVisible(true);
+
+				} catch (Exception e) {
+					e.printStackTrace();
+				}
+			}
+		});
+	}
+
+/*main database */
+	public void database(){
+		String x=textField.getText();
+		if(x.equals("ash1101002m") || x.equals("ASH1101002M"))
+		{   
+			textField.setText("");
+			jTextField1.setText("Monoj Kumar Paul");
+			jTextField2.setText("07-06-1991");
+			jTextField3.setText("O+");
+			jTextField4.setText("Laxmipur");
+			jTextField5.setText("01734430757");
+			jTextField6.setText("sujon.paul2@facebook.com");
+			
+		}
+		else	if(x.equals("bkh1101005f") || x.equals("BKH1101005F"))
+		{
+			textField.setText("");
+			jTextField1.setText("Nusrat Jahan");
+			jTextField2.setText("04-04-1991");
+			jTextField3.setText("B+");
+			jTextField4.setText("Feni");
+			jTextField5.setText("N/A");
+			jTextField6.setText("nusrat.alankar@facebook.com");
+			
+		}else	if(x.equals("ash1101006m") || x.equals("ASH1101006M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Iqbal Mahmud");
+			jTextField2.setText("01-03-1992");
+			jTextField3.setText("O+");
+			jTextField4.setText("Noakhali");
+			jTextField5.setText("01925352785");
+			jTextField6.setText("iqbal.mahmud.3576@facebook.com");
+			
+		}else	if(x.equals("ash1101007m") || x.equals("ASH1101007M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Bakir Hossain");
+			jTextField2.setText("31-01-1992");
+			jTextField3.setText("B+");
+			jTextField4.setText("Comilla");
+			jTextField5.setText("0175926443");
+			jTextField6.setText("mdbakir.hossain.9@facebook.com");
+			
+		}else	if(x.equals("ash1101008m") || x.equals("ASH1101008M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Tanvir Mahmud Siddique");
+			jTextField2.setText("10-10-1991");
+			jTextField3.setText("O+");
+			jTextField4.setText("Laxmipur-Dhaka");
+			jTextField5.setText("N/A");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("ash1101009m") || x.equals("ASH1101009M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Sajon Chandro Poddar");
+			jTextField2.setText("20-08-1991");
+			jTextField3.setText("B+");
+			jTextField4.setText("Laxmipur");
+			jTextField5.setText("01921505311");
+			jTextField6.setText("sajan.poddar.5@facebook.com");
+			
+		}else	if(x.equals("ash1101010m") || x.equals("ASH1101010M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Md. Fakrul Islam");
+			jTextField2.setText("21-10-1990");
+			jTextField3.setText("B+");
+			jTextField4.setText("Dinazpur");
+			jTextField5.setText("01722951998");
+			jTextField6.setText("backlog.sujon@facebook.com");
+			
+		}else	if(x.equals("bkh1101012f") || x.equals("BKH1101012F"))
+		{
+			textField.setText("");
+			jTextField1.setText("Iren Sultana");
+			jTextField2.setText("15-09-1992");
+			jTextField3.setText("A+");
+			jTextField4.setText("Noakhali");
+			jTextField5.setText("N/A");
+			jTextField6.setText("irensultana.pony@facebook.com");
+			
+		}else	if(x.equals("ash1101013m") || x.equals("ASH1101013M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Suvrojit Roy");
+			jTextField2.setText("11-03-1992");
+			jTextField3.setText("B+");
+			jTextField4.setText("Noakhali");
+			jTextField5.setText("01675086158");
+			jTextField6.setText("suvrajitroy.suvro@facebook.com");
+			
+		}else	if(x.equals("ash1101015m") || x.equals("ASH1101015M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Md. Farah Nur Alam");
+			jTextField2.setText("02-06-1992");
+			jTextField3.setText("B+");
+			jTextField4.setText("Comilla");
+			jTextField5.setText("01740838762");
+			jTextField6.setText("obosh.deyal@facebook.com");
+			
+		}else	if(x.equals("bkh1101016f") || x.equals("BKH1101016F"))
+		{
+			textField.setText("");
+			jTextField1.setText("Sanjeda Nur Popy");
+			jTextField2.setText("05-11-1991");
+			jTextField3.setText("A+");
+			jTextField4.setText("Comilla");
+			jTextField5.setText("N/A");
+			jTextField6.setText("sanjeidanur.popy@facebook.com");
+			
+		}else	if(x.equals("bkh1101018f") || x.equals("BKH1101018F"))
+		{
+			textField.setText("");
+			jTextField1.setText("Mausumi Akter");
+			jTextField2.setText("26-08-1992");
+			jTextField3.setText("O+");
+			jTextField4.setText("Noakhali");
+			jTextField5.setText("N/A");
+			jTextField6.setText("mausumi.akter.5@facebook.com");
+			
+		}else	if(x.equals("bkh1101019f") || x.equals("BKH1101019F"))
+		{
+			textField.setText("");
+			jTextField1.setText("Aharna Sen");
+			jTextField2.setText("12-11-1991");
+			jTextField3.setText("A+");
+			jTextField4.setText("Cox’s Bazar");
+			jTextField5.setText("N/A");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("ash1101020m") || x.equals("ASH1101020M"))
+		{
+			textField.setText("");
+			jTextField1.setText("A Q M Salauddin Pathan");
+			jTextField2.setText("29-11-1991");
+			jTextField3.setText("O+");
+			jTextField4.setText("Laxmipur");
+			jTextField5.setText("01919032001");
+			jTextField6.setText("sp.akash.9@facebook.com");
+			
+		}else	if(x.equals("ash1101022m") || x.equals("ASH1101022M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Zunied Uddin Ahmed");
+			jTextField2.setText("07-12-1992");
+			jTextField3.setText("O+");
+			jTextField4.setText("Noakhali");
+			jTextField5.setText("01937764567");
+			jTextField6.setText("swikot@gmail.com");
+			
+		}else	if(x.equals("ash1101021m") || x.equals("ASH1101021M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Mohammad Rafid Shahrier");
+			jTextField2.setText("04-11-1991");
+			jTextField3.setText("O+");
+			jTextField4.setText("Chittagong");
+			jTextField5.setText("01740048308");
+			jTextField6.setText("mohammad.r.shahriar@facebook.com");
+			
+		}else	if(x.equals("ash1101023m") || x.equals("ASH1101023M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Md. Sajibul Alam Bhuiyan");
+			jTextField2.setText("27-06-1991");
+			jTextField3.setText("AB+");
+			jTextField4.setText("Comilla");
+			jTextField5.setText("01675363706");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("ash1101025m") || x.equals("ASH1101025M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Rajib Das");
+			jTextField2.setText("25-03-1992");
+			jTextField3.setText("B+");
+			jTextField4.setText("Laxmipur");
+			jTextField5.setText("01917782024");
+			jTextField6.setText("rajib.das.9400@facebook.com");
+			
+		}else	if(x.equals("ash1101026m") || x.equals("ASH1101026M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Mohammad Saimun al Maruf");
+			jTextField2.setText("10-10-1991");
+			jTextField3.setText("A+");
+			jTextField4.setText("Chittagong");
+			jTextField5.setText("01824933435");
+			jTextField6.setText("romeo.saimoon@facebook.com");
+			
+		}else	if(x.equals("ash1101027m") || x.equals("ASH1101027M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Md. Tanim Rahman");
+			jTextField2.setText("03-03-1992");
+			jTextField3.setText("O-");
+			jTextField4.setText("Laxmipur");
+			jTextField5.setText("01937218105");
+			jTextField6.setText("tanim.rana@facebook.com");
+			
+		}else	if(x.equals("ash1101028m") || x.equals("ASH1101028M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Sukanta Bala");
+			jTextField2.setText("20-04-1992");
+			jTextField3.setText("A+");
+			jTextField4.setText("Gopalgonj");
+			jTextField5.setText("01738123140");
+			jTextField6.setText("antohin.rahin@facebook.com");
+			
+		}else	if(x.equals("ash1101029m") || x.equals("ASH1101029M"))
+		{
+			textField.setText("");
+			jTextField1.setText("S.M. Minhaj-E-Mowla");
+			jTextField2.setText("04-01-1992");
+			jTextField3.setText("O+");
+			jTextField4.setText("Laxmipur");
+			jTextField5.setText("01736775426");
+			jTextField6.setText("100002295672579@facebook.com");
+			
+		}else	if(x.equals("ash1101030m") || x.equals("ASH1101030M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Rajesh Kumar Majumdar");
+			jTextField2.setText("15-12-1991");
+			jTextField3.setText("O+");
+			jTextField4.setText("Comilla");
+			jTextField5.setText("01922805565");
+			jTextField6.setText("rajesh.ponting@facebook.com");
+			
+		}else	if(x.equals("ash1101032m") || x.equals("ASH1101032M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Md. Robiul Alam");
+			jTextField2.setText("17-08-1992");
+			jTextField3.setText("N/A");
+			jTextField4.setText("Noakhali");
+			jTextField5.setText("01671069297");
+			jTextField6.setText("prothom.robi@facebook.com");
+			
+		}else	if(x.equals("bkh1101033f") || x.equals("BKH1101033F"))
+		{
+			textField.setText("");
+			jTextField1.setText("Rafshana Ferdous");
+			jTextField2.setText("09-10-1992");
+			jTextField3.setText("O+");
+			jTextField4.setText("Noakhali-Ctg");
+			jTextField5.setText("N/A");
+			jTextField6.setText("bhorer.shishir.35@facebook.com");
+			
+		}else	if(x.equals("ash1101034m") || x.equals("ASH1101034M"))
+		{
+			textField.setText("");
+			jTextField1.setText("A.F.M. Baha Uddin Shamim");
+			jTextField2.setText("24-09-1992");
+			jTextField3.setText("B+");
+			jTextField4.setText("Noakhali");
+			jTextField5.setText("01671307446, 01923536356");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("ash1101037m") || x.equals("ASH1101037M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Ripon Chowdhury");
+			jTextField2.setText("09-06-1991");
+			jTextField3.setText("O+");
+			jTextField4.setText("Chittagong");
+			jTextField5.setText("01812866508");
+			jTextField6.setText("ripon.chowdhury.965@facebook.com");
+			
+		}else	if(x.equals("ash1101040m") || x.equals("ASH1101040M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Rishat Saha");
+			jTextField2.setText("04-03-1992");
+			jTextField3.setText("B+");
+			jTextField4.setText("Feni");
+			jTextField5.setText("01924542715,01672777351");
+			jTextField6.setText("n/A");
+			
+		}else	if(x.equals("ash11010043m") || x.equals("ASH1101043M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Abdul Motaleb");
+			jTextField2.setText("31-12-1989");
+			jTextField3.setText("O+");
+			jTextField4.setText("Laxmipur");
+			jTextField5.setText("01938650400");
+			jTextField6.setText("abdul.motaleb.545@facebook.com");
+			
+		}else	if(x.equals("ash1101044m") || x.equals("ASH1101044M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Md. Najrul Islam");
+			jTextField2.setText("13-07-1992");
+			jTextField3.setText("A+");
+			jTextField4.setText("Noakhali");
+			jTextField5.setText("01677509970");
+			jTextField6.setText("backbancher.nazrul@facebook.com");
+			
+		}else	if(x.equals("ash1101045m") || x.equals("ASH1101045M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Azizul Hakim Suzan");
+			jTextField2.setText("05-11-1992");
+			jTextField3.setText("AB+");
+			jTextField4.setText("Tangail-Gazipur");
+			jTextField5.setText("01829672461,01717503165");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("ash1101046m") || x.equals("ASH1101046M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Kawsar Hamid");
+			jTextField2.setText("31-12-1991");
+			jTextField3.setText("A+");
+			jTextField4.setText("Gazipur");
+			jTextField5.setText("01747814700");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("ash1101047m") || x.equals("ASH1101047M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Md.Anawar Hosen");
+			jTextField2.setText("28-11-1992");
+			jTextField3.setText("O+");
+			jTextField4.setText("Comilla");
+			jTextField5.setText("01733581805");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("ash1101048m") || x.equals("ASH1101048M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Sayed Mahmud Raihan");
+			jTextField2.setText("12-12-1991");
+			jTextField3.setText("Feni ");
+			jTextField4.setText("B+");
+			jTextField5.setText("01722680407,01671844633");
+			jTextField6.setText("sayedmahmud.raihan@facebook.com");
+			
+		}else	if(x.equals("bkh1101050m") || x.equals("BKH1101050F"))
+		{
+			textField.setText("");
+			jTextField1.setText("Shweta Barua Riya");
+			jTextField2.setText("16-11-1992");
+			jTextField3.setText("O+");
+			jTextField4.setText("Chittagong");
+			jTextField5.setText("N/A");
+			jTextField6.setText("N/A");
+			
+		}	else if(x.equals("ash1101051m") || x.equals("ASH1101051M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Tushar Bhattacharjje");
+			jTextField2.setText("21-06-1992");
+			jTextField3.setText("O+");
+			jTextField4.setText("B.Baria");
+			jTextField5.setText("01830149100");
+			jTextField6.setText("tushar.bhattacharjje@facebook.com");
+			
+		}else	if(x.equals("ash1101052m") || x.equals("ASH1101052M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Anamul hoque");
+			jTextField2.setText("30-01-1991");
+			jTextField3.setText("A+");
+			jTextField4.setText("Comilla");
+			jTextField5.setText("01937777150");
+			jTextField6.setText("anamul.nasim.5@facebook.com");
+			
+		}else	if(x.equals("ash1101053m") || x.equals("ASH1101053M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Jewel Biswas");
+			jTextField2.setText("02-09-1991");
+			jTextField3.setText("O+");
+			jTextField4.setText("Chittagong");
+			jTextField5.setText("01811880092");
+			jTextField6.setText("jewelbiswas64@yahoo.com");
+			
+		}else	if(x.equals("bkh1101054f") || x.equals("BKH1101054F"))
+		{
+			textField.setText("");
+			jTextField1.setText("Joya Rani Sarker");
+			jTextField2.setText("15-01-1991");
+			jTextField3.setText("B-");
+			jTextField4.setText("Comilla");
+			jTextField5.setText("");
+			jTextField6.setText("joyita.joya.39@facebook.com");
+			
+		}else	if(x.equals("ash1101055m") || x.equals("ASH1101055M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Mohammed Mazharul Islam");
+			jTextField2.setText("01-01-1992");
+			jTextField3.setText("O+");
+			jTextField4.setText("Comilla");
+			jTextField5.setText("01913210506");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("ash1101056m") || x.equals("ASH1101056M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Mohammed Sazzad Quader Kutubi");
+			jTextField2.setText("08-09-1991");
+			jTextField3.setText("B+");
+			jTextField4.setText("Chittagong");
+			jTextField5.setText("01922102867");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("bkh1101058f") || x.equals("BKH1101058F"))
+		{
+			textField.setText("");
+			jTextField1.setText("Moshfika Ikfath");
+			jTextField2.setText("19-02-1992");
+			jTextField3.setText("B+");
+			jTextField4.setText("Chittagong");
+			jTextField5.setText("");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("ash1101060m") || x.equals("ASH1101060M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Md. Hasibur Rahman");
+			jTextField2.setText("26-12-1991");
+			jTextField3.setText("AB+");
+			jTextField4.setText("Gazipur");
+			jTextField5.setText("01921093887,01676541593");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("ash1101061m") || x.equals("ASH1101061M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Azizur Rahman");
+			jTextField2.setText("22-6-1992");
+			jTextField3.setText("A+");
+			jTextField4.setText("Noakhali");
+			jTextField5.setText("01830353652");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("ash1101062m") || x.equals("ASH1101062M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Md. Abdur Rahman");
+			jTextField2.setText("08-09-1991");
+			jTextField3.setText("A+");
+			jTextField4.setText("Noakhali");
+			jTextField5.setText("01557185409");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("bkh1101063f") || x.equals("BKH1101063F"))
+		{
+			textField.setText("");
+			jTextField1.setText("Masrifa Tasnin");
+			jTextField2.setText("05-11-1991");
+			jTextField3.setText("");
+			jTextField4.setText("Chapain.gong-Ctg");
+			jTextField5.setText("N/A");
+			jTextField6.setText("N/A");
+			
+		}else	if(x.equals("ash1101064m") || x.equals("ASH1101064M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Kamlesh Kumar Thakur");
+			jTextField2.setText("18-03-1992");
+			jTextField3.setText("O+");
+			jTextField4.setText("Nepal");
+			jTextField5.setText("01754977205");
+			jTextField6.setText("N/A");
+			
+		}
+		else	if(x.equals("ash1101065m") || x.equals("ASH1101065M"))
+		{
+			textField.setText("");
+			jTextField1.setText("Bipin Yadav");
+			jTextField2.setText("28-12-1991");
+			jTextField3.setText("O+");
+			jTextField4.setText("Nepal");
+			jTextField5.setText("01753755327");
+			jTextField6.setText("N/A");
+			
+		}
+		else
+		{
+			textField.setText("info is wrong, refresh now");
+			jTextField1.setText("N/A");
+			jTextField2.setText("N/A");
+			jTextField3.setText("N/A");
+			jTextField4.setText("N/A");
+			jTextField5.setText("N/A");
+			jTextField6.setText("N/A");
+		}
+	}
+	/*JFRAME CONSTRUCTOR*/
+	public JFC() {
+		setResizable(false);
+		setTitle("STUDENT INFORMATION");
+		getContentPane().setBackground(SystemColor.activeCaption);
+	
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setBounds(100, 100, 623, 537);
+		getContentPane().setLayout(null);
+		
+		JLabel lblNewLabel = new JLabel("Student Information Of CSTE 6th Batch");
+		lblNewLabel.setBackground(new Color(240, 240, 240));
+		lblNewLabel.setFont(new Font("Tahoma", Font.BOLD, 19));
+		lblNewLabel.setBounds(100, 28, 394, 23);
+		getContentPane().add(lblNewLabel);
+		
+		JPanel panel = new JPanel();
+		panel.setBorder(new MatteBorder(2, 1, 2, 1, (Color) new Color(0, 0, 0)));
+		panel.setBackground(SystemColor.activeCaption);
+		panel.setBounds(0, 0, 617, 77);
+		getContentPane().add(panel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Enter Your ID/ROLL : ");
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.BOLD, 12));
+		lblNewLabel_1.setBounds(90, 124, 140, 14);
+		getContentPane().add(lblNewLabel_1);
+		
+		JButton btnNewButton = new JButton("OK");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+				database();
+			}
+		});
+		btnNewButton.setBounds(240, 157, 89, 23);
+		getContentPane().add(btnNewButton);
+		
+		textField = new JTextField();
+		textField.addKeyListener(new KeyAdapter() {
+			@Override
+			public void keyPressed(KeyEvent e) {
+				if(e.getKeyCode()==e.VK_ENTER)
+				{
+				database();
+				}
+			}
+		});
+		textField.setBounds(240, 119, 200, 27);
+		getContentPane().add(textField);
+		textField.setColumns(10);
+		
+		JButton btnNewButton_1 = new JButton("Refresh");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent arg0) {
+							textField.setText("");
+							
+							jTextField1.setText("");
+							jTextField2.setText("");
+							jTextField3.setText("");
+							jTextField4.setText("");
+							jTextField5.setText("");
+							jTextField6.setText("");
+			}
+		});
+		btnNewButton_1.setBounds(351, 157, 89, 23);
+		getContentPane().add(btnNewButton_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Example:ash1101022m,bkh1101012f etc");
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 12));
+		lblNewLabel_2.setBounds(64, 212, 233, 14);
+		getContentPane().add(lblNewLabel_2);
+		
+		JLabel lblNewLabel_3 = new JLabel("ID/Roll either enter into Upper case or Lowercase");
+		lblNewLabel_3.setBounds(209, 99, 285, 14);
+		getContentPane().add(lblNewLabel_3);
+		
+		JPanel panel_1 = new JPanel();
+		panel_1.setBackground(SystemColor.activeCaption);
+		panel_1.setBorder(new LineBorder(new Color(0, 0, 0), 2));
+		panel_1.setBounds(0, 88, 617, 157);
+		getContentPane().add(panel_1);
+		
+		JLabel lblNewLabel_4 = new JLabel("Name of the Student :");
+		lblNewLabel_4.setBounds(64, 288, 147, 14);
+		getContentPane().add(lblNewLabel_4);
+		
+		JLabel lblNewLabel_5 = new JLabel(" Date of Birth               :");
+		lblNewLabel_5.setBounds(64, 324, 147, 14);
+		getContentPane().add(lblNewLabel_5);
+		
+		JLabel lblNewLabel_6 = new JLabel("Blood Group                :");
+		lblNewLabel_6.setBounds(64, 359, 147, 14);
+		getContentPane().add(lblNewLabel_6);
+		
+		JLabel lblNewLabel_7 = new JLabel("Home District              :");
+		lblNewLabel_7.setBounds(64, 391, 147, 14);
+		getContentPane().add(lblNewLabel_7);
+		
+		JLabel lblNewLabel_8 = new JLabel("Contact Number         :");
+		lblNewLabel_8.setBounds(64, 424, 147, 14);
+		getContentPane().add(lblNewLabel_8);
+		
+		JLabel lblNewLabel_9 = new JLabel("Email                             :");
+		lblNewLabel_9.setBounds(64, 457, 147, 14);
+		getContentPane().add(lblNewLabel_9);
+		
+		jTextField1 = new JTextField();
+		jTextField1.setBounds(261, 285, 210, 20);
+		getContentPane().add(jTextField1);
+		jTextField1.setColumns(10);
+		
+		jTextField2 = new JTextField();
+		jTextField2.setBounds(261, 321, 210, 20);
+		getContentPane().add(jTextField2);
+		jTextField2.setColumns(10);
+		
+		jTextField3 = new JTextField();
+		jTextField3.setBounds(261, 356, 210, 20);
+		getContentPane().add(jTextField3);
+		jTextField3.setColumns(10);
+		
+		jTextField4 = new JTextField();
+		jTextField4.setBounds(261, 388, 210, 20);
+		getContentPane().add(jTextField4);
+		jTextField4.setColumns(10);
+		
+		jTextField5 = new JTextField();
+		jTextField5.setBounds(261, 421, 210, 20);
+		getContentPane().add(jTextField5);
+		jTextField5.setColumns(10);
+		
+		jTextField6 = new JTextField();
+		jTextField6.setBounds(261, 454, 210, 20);
+		getContentPane().add(jTextField6);
+		jTextField6.setColumns(10);
+		
+		JLabel lblNewLabel_10 = new JLabel("INFORMATION");
+		lblNewLabel_10.setFont(new Font("Dialog", Font.BOLD, 14));
+		lblNewLabel_10.setBounds(240, 257, 111, 16);
+		getContentPane().add(lblNewLabel_10);
+		
+		JPanel panel_2 = new JPanel();
+		panel_2.setBorder(new LineBorder(new Color(0, 0, 0), 2));
+		panel_2.setBackground(SystemColor.activeCaption);
+		panel_2.setBounds(0, 257, 617, 252);
+		getContentPane().add(panel_2);
+	}
+}
